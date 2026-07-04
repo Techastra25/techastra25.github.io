@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -152,10 +153,10 @@ mark.hl{background:rgba(14,165,233,0.35);color:var(--w);padding:0 2px;border-rad
   margin-bottom:1.5rem;
 }
 .hero-avatar{
-  width:76px;height:76px;border-radius:50%;
+  width:96px;height:96px;border-radius:50%;
   object-fit:cover;flex-shrink:0;
-  border:2px solid var(--border2);
-  box-shadow:0 0 0 4px rgba(14,165,233,0.08),0 10px 30px rgba(0,0,0,0.5);
+  border:3px solid var(--border2);
+  box-shadow:0 0 0 5px rgba(14,165,233,0.1),0 10px 30px rgba(0,0,0,0.5);
   transition:transform 0.4s,box-shadow 0.4s;
 }
 .hero-avatar:hover{
@@ -202,12 +203,13 @@ mark.hl{background:rgba(14,165,233,0.35);color:var(--w);padding:0 2px;border-rad
 }
 .btn-primary{
   background:linear-gradient(135deg,var(--b1),var(--b2));
-  color:var(--w);box-shadow:0 0 24px rgba(14,165,233,0.3);
+  color:var(--w);box-shadow:0 0 28px rgba(14,165,233,0.45);
+  font-weight:700;
 }
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 0 36px rgba(14,165,233,0.5)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 0 40px rgba(14,165,233,0.65)}
 .btn-ghost{
-  border:1.5px solid var(--border2);color:var(--t1);
-  background:var(--glass);
+  border:2px solid rgba(14,165,233,0.55);color:var(--w);
+  background:rgba(14,165,233,0.06);font-weight:700;
 }
 .btn-ghost:hover{border-color:var(--b1);color:var(--b1);background:var(--glass2)}
 
@@ -588,9 +590,17 @@ footer a{color:var(--b1);text-decoration:none}
   .nav-links li:nth-child(n+3){display:none}
 }
 @media(max-width:600px){
-  section{padding:60px 5%}
-  .stats-inner{grid-template-columns:repeat(2,1fr)}
-  .pg{grid-template-columns:1fr}
+  section{padding:72px 5.5%}
+  .s-title{margin-bottom:2.2rem}
+  .stats-inner{grid-template-columns:repeat(2,1fr);gap:2.2rem 1.5rem}
+  .pg{grid-template-columns:1fr;gap:1.8rem}
+  .skills-grid{gap:1.8rem}
+  .cg{gap:1.6rem}
+  .tl{gap:3.2rem}
+  .hero-desc{margin-bottom:2.6rem}
+  .hero-btns{gap:0.8rem}
+  .resume-wrap,.contact-wrap{gap:3rem}
+  .hero-avatar-wrap{margin-bottom:1.8rem}
 }
 </style>
 </head>
